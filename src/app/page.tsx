@@ -27,7 +27,7 @@ export default function Home() {
         {/* Header */}
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-slate-900 dark:text-slate-50 mb-3">
-            Playkami Verifier
+            PlayKami Verifier
           </h1>
           {/* <p className="text-lg text-slate-600 dark:text-slate-400">
             Independently verify the fairness of your pack openings on Monad blockchain

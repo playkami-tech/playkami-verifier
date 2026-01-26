@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Playkami Verifier",
+  title: "PlayKami Verifier",
   description: "Independently verify the fairness of your pack openings on Monad blockchain",
 };
 
