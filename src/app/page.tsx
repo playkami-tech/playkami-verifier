@@ -10,7 +10,7 @@ import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useVerifier } from '@/providers/VerifierProvider';
-import { XCircle } from 'lucide-react';
+import { XCircle, ArrowLeft } from 'lucide-react';
 
 export default function Home() {
   const { isLoading, error, verificationSteps } = useVerifier();
@@ -26,12 +26,21 @@ export default function Home() {
       <main className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-slate-900 dark:text-slate-50 mb-3">
-            PlayKami Verifier
-          </h1>
-          {/* <p className="text-lg text-slate-600 dark:text-slate-400">
-            Independently verify the fairness of your pack openings on Monad blockchain
-          </p> */}
+          <a
+            href={process.env.NEXT_PUBLIC_FRONTEND_URL || 'https://playkami.io'}
+            className="inline-flex items-center gap-1.5 text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors mb-4"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back to Playkami
+          </a>
+          <div className="text-center mb-10">
+            <h1 className="text-4xl font-bold text-slate-900 dark:text-slate-50 mb-3">
+              PlayKami Verifier
+            </h1>
+            {/* <p className="text-lg text-slate-600 dark:text-slate-400">
+              Independently verify the fairness of your pack openings on Monad blockchain
+            </p> */}
+          </div>
         </div>
 
         {/* How It Works - Always Visible */}
