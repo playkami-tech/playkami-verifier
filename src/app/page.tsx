@@ -25,7 +25,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
       <main className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Header */}
-        <div className="text-center mb-10">
+        <div className="mb-10">
           <a
             href={process.env.NEXT_PUBLIC_FRONTEND_URL || 'https://playkami.io'}
             className="inline-flex items-center gap-1.5 text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition-colors mb-4"
